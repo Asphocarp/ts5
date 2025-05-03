@@ -2,7 +2,7 @@
 
 A minimalist Rust CLI that generates 5-character, URL-safe Base64 timestamps.
 
-⚠️ **Important Limitation**: This toy timestamp format will only work correctly until February 7, 2059. After this date, the 30-bit counter will overflow and timestamps will no longer be unique.
+⚠️ **Important Limitation**: This toy timestamp format will only work correctly until February 7, 2059. After this date, the 30-bit counter will overflow and become ts6.
 
 ## How It Works
 
