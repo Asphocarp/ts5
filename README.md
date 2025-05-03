@@ -2,6 +2,8 @@
 
 A minimalist Rust CLI that generates 5-character, URL-safe Base64 timestamps.
 
+⚠️ **Important Limitation**: This timestamp format will only work correctly until February 7, 2059. After this date, the 30-bit counter will overflow and timestamps will no longer be unique.
+
 ## How It Works
 
 The program encodes the time difference in seconds between now and a custom epoch (2025-01-01 00:00:00 UTC) as a 5-character, URL-safe Base64 string.
@@ -9,8 +11,6 @@ The program encodes the time difference in seconds between now and a custom epoc
 - Uses a custom epoch (1735689600 seconds since Unix epoch)
 - Fits in 30 bits until Feb 7, 2059, keeping the output at exactly 5 characters
 - Uses URL-safe Base64 alphabet: `A-Za-z0-9-_`
-
-⚠️ **Important Limitation**: This timestamp format will only work correctly until February 7, 2059. After this date, the 30-bit counter will overflow and timestamps will no longer be unique.
 
 ## Building and Running
 
