@@ -18,7 +18,7 @@ cargo build --release
 
 # Run the program
 cargo run --release
-# Output will be something like: ^AoV_L
+# Output will be something like: AoV_L
 ```
 
 ## Implementation Details
