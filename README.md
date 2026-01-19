@@ -28,4 +28,11 @@ cargo run --release
 - The program works by taking the seconds since the custom epoch
 - Values are clamped at 0 to handle times before 2025
 - Each 5-character timestamp represents a unique moment in time
-- The encoding extracts 6-bit windows at bit positions 24, 18, 12, 6, 0 and maps them directly to the Base64 alphabet 
+- The encoding extracts 6-bit windows at bit positions 24, 18, 12, 6, 0 and maps them directly to the Base64 alphabet
+
+## TODO
+counting to the end, with base62
+start: 2022-11-30 11:38:00-08:00 PST
+seconds: 916132832
+end: 2051-12-11 20:58:32-08:00 PST
+end UTC: 2051-12-12 04:58:32+00:00
